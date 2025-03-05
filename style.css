@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main-section {
+    width: 100%;
+    height: 80dvh;
+    background-image: url('./assets/images/main-bg.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+
+.hero-section {
+    width: 50%;
+    padding-top: 6dvh;
+    padding-left: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section>* {
+
+    width: 42%;
+}
+
+.line-break {
+    width: 0.8px;
+    height: 4rem;
+    background-color: black;
+    border: none;
+}
+
+.hero-text {
+    padding-top: 6dvh;
+    padding-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    color: #1A2D44;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.product-demo {
+    padding-top: 2.5rem;
+    padding-left: 8vw;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.btns {
+    padding-top: 2.5rem;
+    padding-left: 8vw;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+.btns>* {
+    padding: 0.5rem 1.2rem;
+    background: #265DF5;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    color: #fff;
+    min-width: 7rem;
+}
+
+.noBtn {
+    background-color: #fff;
+    color: #1A2D44;
+    border: 2px solid #1A2D44;
+}
+
+.footer {
+    height: 20dvh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.branding-stack {
+    padding-left: 8vw;
+    font-size: 1.5rem;
+}
+
+.stacks {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    justify-content: end;
+    padding-right: 4rem;
+
+}
+
+.stacks span {
+    color: #3F3D3D;
+    font-size: 2rem;
+}
+
+.hero-text-mobile {
+    display: none;
+}
+
+.bottom-section-mobile {
+    display: none;
+}
+
+.stacks div {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+
+/* ! For Mobile  */
+
+@media only screen and (max-width: 768px) {
+
+    .main-section {
+        background-image: url('./assets/images/main-bg-mobile.png');
+        background-position: bottom;
+        height: 90dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+        gap: 1rem;
+    }
+
+    .hero-section img:last-child {
+        width: 70%;
+    }
+
+    .hero-text {
+        display: none;
+    }
+
+    .product-demo {
+        padding-left: 0;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .btns {
+        padding-left: 0;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .btns>* {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        min-width: 4rem;
+    }
+
+    .line-break {
+        display: none;
+    }
+
+    .hero-text-mobile {
+        padding-top: 6dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-family: "Inter", sans-serif;
+        text-transform: capitalize;
+        font-size: 1rem;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        color: #1A2D44;
+    }
+
+    .stacks div span {
+        display: none;
+    }
+
+    .stacks div p {
+        background: #fff;
+        border-radius: 1rem;
+        padding: 2px 8px;
+        color: #000;
+        font-size: 0.5rem;
+        width: 100%;
+    }
+
+    .branding-stack {
+        padding-left: 8vw;
+        font-size: 0.6rem;
+        width: 38%;
+    }
+
+    .stacks {
+        gap: 8px;
+        flex: unset;
+        justify-content: unset;
+        padding-right: unset;
+        width: 62%;
+        flex-wrap: wrap;
+    }
+
+    .stacks div {
+        width: 46%;
+        text-align: center;
+    }
+
+    .footer {
+        height: 10%;
+        z-index: 13;
+        position: absolute;
+        bottom: 0;
+        padding: 1rem 0;
+
+    }
+
+    .bottom-section-mobile {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 1rem;
+    }
+
+    .bottom-section-mobile img:first-child {
+        width: 15%;
+    }
+
+    .bottom-section-mobile img:last-child {
+        width: 80%;
+    }
+
+    .top-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
